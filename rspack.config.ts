@@ -22,15 +22,16 @@ export default withZephyr()({
   },
 
   devServer: {
-    port: NaN,
+    port: 8080,
     historyApiFallback: true,
     watchFiles: [path.resolve(__dirname, "src")],
   },
+
   output: {
     // You need to set a unique value that is not equal to other applications
     uniqueName: "dashboard_host",
     // publicPath must be configured if using manifest
-    publicPath: "http://localhost:NaN/",
+    publicPath: "http://localhost:8080/",
   },
 
   experiments: {
