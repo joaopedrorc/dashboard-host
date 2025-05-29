@@ -14,7 +14,8 @@
     "allowImportingTsExtensions": true,
     "paths": {
       "*": ["./@mf-types/*"]
-    }
+    },
+    "typeRoots": ["./node_modules/@types", "./src/decls"]
   },
   "include": ["src"],
   "ts-node": {
