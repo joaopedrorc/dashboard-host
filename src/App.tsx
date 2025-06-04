@@ -3,7 +3,8 @@ import React, { Suspense } from "react";
 
 import "./index.css";
 
-const RemoteWidget = React.lazy(() => import("widget_weather/App"));
+const Counter = React.lazy(() => import("widget_weather/Counter"));
+// import Counter from 'widget_weather/Counter';
 
 const App = () => (
   <Suspense fallback={<div>Loading widget...</div>}>
@@ -11,7 +12,7 @@ const App = () => (
       <div>Name: dashboard-host</div>
       <div>Framework: react-19</div>
     </div>
-    <RemoteWidget />
+    <Counter />
   </Suspense>
 );
 
